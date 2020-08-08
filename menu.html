@@ -6,11 +6,23 @@
     <title></title>
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/js/menu.js"></script>
 </head>
 <body>
-  <div id="wt-tiltes">
+  <header>
+    <a href="/">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+
+  </header>
+  <div class="wt-intro">
+    <img id="title-img" ><h1 id="title" ></h1>
   </div>
-  <a href="/">Main</a>
+  <div class="main">
+    <div class="button-container">
+      <button onclick="toTop()" id="scroll-up-btn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+      <button onclick="toBottom()" id="scroll-down-btn" title="Go to down"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+    </div>
+    <ul id="wt-tiltes">
+    </ul>
+  </div>
+  <script src="/js/menu.js"></script>
 </body>
 </html>
