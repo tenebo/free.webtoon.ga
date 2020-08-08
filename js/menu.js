@@ -6,7 +6,7 @@ for (var i=0; i<args.length; ++i) {
         $_GET[decodeURIComponent(tmp[0])] = decodeURIComponent(tmp.slice(1).join("").replace("+", " "));
     }
 }
-
+ 
 
 function loadMainPage(start,end){
   let title = $_GET["title"];
