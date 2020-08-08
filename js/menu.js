@@ -14,7 +14,7 @@ function loadMainPage(start,end){
     for(let i=start;i<end+1;i++){
       var node = document.createElement("A");
       var textnode = document.createTextNode(i.toString()+" 화");   
-      node.setAttribute("href", `/view.php?title=${title}&epi=${i}`)     
+      node.setAttribute("href", `/view.html?title=${title}&epi=${i}`)     
       node.appendChild(textnode);                   
       document.getElementById("wt-tiltes").appendChild(node);
     }
@@ -30,6 +30,7 @@ async function loadJson () {
   )
     .then(response => response.json())
     .then(json => {
+      document.title = json.webtoon.korean[$_GET["title"]] + " 무료 보기";
       let epi = json.webtoon.epi[$_GET["title"]];
       loadMainPage(parseInt(epi.start), parseInt(epi.end));
     });

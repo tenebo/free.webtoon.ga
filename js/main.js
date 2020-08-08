@@ -10,14 +10,14 @@ async function loadJson () {
     .then(response => response.json())
     .then(json => {
       json.webtoon.titles.forEach(function(input){
-        let remove_underline = input.replace(/_/g, " ");
-        var node = document.createElement("DIV");//.setAttribute("onclick", `loadTo('menu.php?title=${input}')`) ;
-        node.setAttribute("onclick", `loadTo('menu.php?title=${input}')`);
+        //let remove_underline = input.replace(/_/g, " ");
+        var node = document.createElement("DIV");
+        node.setAttribute("onclick", `loadTo('menu.html?title=${input}')`);
         var imgtag = document.createElement("IMG");
         imgtag.setAttribute("src", `https://qpo9w6tvvhkbvesizqvshw-on.drv.tw/web/${input}/${input}.jpg`); 
         node.appendChild(imgtag);         
         var name = document.createElement("P");
-        name.appendChild(document.createTextNode(remove_underline));
+        name.appendChild(document.createTextNode(json.webtoon.korean[input]));
         node.appendChild(name);
         document.getElementById("wt-container").appendChild(node);
       })
