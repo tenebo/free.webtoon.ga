@@ -17,6 +17,7 @@ async function loadJson () {
         imgtag.setAttribute("src", `https://qpo9w6tvvhkbvesizqvshw-on.drv.tw/web/${input}/${input}.jpg`); 
         node.appendChild(imgtag);         
         var name = document.createElement("P");
+        name.setAttribute("class", "korean-font")
         name.appendChild(document.createTextNode(json.webtoon.korean[input]));
         node.appendChild(name);
         document.getElementById("wt-container").appendChild(node);
