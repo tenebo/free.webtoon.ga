@@ -18,6 +18,10 @@ h1, h3{
 #subtitle{
 margin-left: 10px;
 }
+
+#searchBar{
+  margin: 10px;
+}
 body, html{
   margin: 0;
   border: 0;
