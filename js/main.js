@@ -38,7 +38,7 @@ function searchWt() {
             x[i].style.display="none"; 
         } 
         else { 
-            x[i].style.display="list-item";                  
+            x[i].style.display="block";                  
         } 
     } 
 } 
