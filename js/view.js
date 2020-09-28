@@ -22,6 +22,7 @@ function loadMainPage(){
       document.getElementById("leftBtnLink").href = `/view.html?title=${title}&epi=${parseInt(epi) - 1}`;
       document.getElementById("middleBtnLink").href = "/menu.html?title=" + title;
       document.getElementById("rightBtnLink").href = `/view.html?title=${title}&epi=${parseInt(epi) + 1}`;
+      document.getElementById("commentBtnLink").href = `/comment.html?title=${title}&epi=${parseInt(epi) + 1}`;
     });
   }
 }
