@@ -4,7 +4,7 @@ iframe{
   width: 100%;
   position: absolute;
   margin: none;
-  height: calc(100% - 50px);
+  height: calc(100% - 40px);
 }
 
 body, html,iframe{
@@ -20,23 +20,71 @@ body, html{
 
 .wt-content{
   width: 100%;
-  height: calc(100% - 50px);
+  height: calc(100% - 40px);
 }
 
-.button-container {
-  width: 100%;
+.menu-container{
+  width:600px;
+  margin: auto;
+  height: 100%;
   margin-top: 5px;
-  margin-bottom: 5px;
-  text-align: center;
 }
-.button-container .btn {
-  height: 50px;
-  width: 210px;
-  font-size:40px;
+button-container-right{
+  width: 50%;
+  float: right;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+.button-container-right .btnright {
+  font-size:30px;
   color: black;
+  margin-right: 20px;
+  float: right;
+  flex: 1;
 }
-@media only screen and (max-width: 700px) {
+
+.button-container-right .btnleft {
+  font-size:30px;
+  color: black;
+  margin-right: 50px;
+  float: right;
+  flex: 1;
+}
+
+
+
+
+.button-container-left{
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+
+
+.button-container-left .btnleft {
+  font-size:30px;
+  color: black;
+  margin-top: 1px;
+  margin-left: 10px;
+  float: left;
+  flex: 1;
+}
+.button-container-left .btnright {
+  font-size:30px;
+  color: black;
+  margin-left: 10px;
+  float: left;
+  flex: 1;
+}
+@media only screen and (max-width: 600px) {
   .button-container .btn {
     width: calc(100% * 0.3);
+  }
+  .menu-container{
+    width:100%;
   }
 }
