@@ -10,19 +10,31 @@
 <body>
   <header>
     <a href="/">Home <i class="fa fa-home" aria-hidden="true"></i></a>
-
   </header>
-  <div class="wt-intro">
-    <img id="title-img" ><h1 class="korean-font" id="title" ></h1>
-  </div>
-  <div class="main">
-    <div class="button-container">
-      <button onclick="toTop()" id="scroll-up-btn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-      <button onclick="toBottom()" id="scroll-down-btn" title="Go to down"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+  <div id="vue">
+    <div v-if="!is_loading">
+      <div class="wt-intro">
+        <img id="title-img" v-bind:src="img_url"><h1 class="korean-font" id="title" >{{korean_title_name}}</h1>
+      </div>
+      <div class="main">
+        <div class="button-container">
+          <button onclick="toTop()" id="scroll-up-btn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+          <button onclick="toBottom()" id="scroll-down-btn" title="Go to down"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+        </div>
+        <ul id="wt-tiltes">
+          <list-webtoon
+            v-for="i in range"
+            v-bind:num="i"
+            v-bind:title="_GET['title']"
+          ></list-webtoon>
+        </ul>
+      </div>
     </div>
-    <ul id="wt-tiltes">
-    </ul>
+    <div v-else>
+      <p>Loading...</p>
+    </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="/js/menu.js"></script>
 </body>
 </html>
