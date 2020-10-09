@@ -21,7 +21,7 @@
         v-bind:koreanname="WebtoonData.webtoon.korean[title]"
       ></webtoontitle>
     </div>
-    <p v-show="WebtoonData==''">Loading...</p>
+    <p v-else>Loading...</p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="/js/main.js"></script>
