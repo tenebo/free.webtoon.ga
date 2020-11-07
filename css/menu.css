@@ -42,6 +42,7 @@ header {
 #title-img {
   width: 100px;
   float:left;
+  border-radius: 10%;
 }
 
 .main a{

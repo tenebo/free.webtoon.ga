@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400');
+
+.wt-container a{
+  color: black;
+  text-decoration: none; 
+}
+
+
 h1, h2, h3, h4, h5, p{
   font-family: 'Montserrat', sans-serif;
 }
-
 .korean-font{
   font-family: 'Nanum Gothic';
 }
@@ -34,22 +40,30 @@ body, html{
 }
 
 .wt-container  div {
-  width: 200px;
-  height: 300px;
   font-size: 20px;
   text-align: center;
 }
 
 .wt-container  img{
-  width: 200px;
+  border-radius: 10%;
 }
 .wt-container  p{
   margin: 0px;
+}
+@media only screen and (min-width: 600px) {
+  .wt-container > div {
+    width: 200px;
+    height: 300px;
+  }
+  .wt-container  img{
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .wt-container > div {
     width: calc(100% * 0.33333);
+    padding-bottom: 40px;
   }
   .wt-container  img{
     width: 100%;

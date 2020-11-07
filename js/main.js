@@ -11,9 +11,11 @@ Vue.component('webtoontitle', {
     },
   },
   template: `
-  <div v-on:click="this.onclickurl" class="wt">
-    <img v-bind:src="imgSrc">
-    <p class="korean-font">{{koreanname}}</p>
+  <div class="wt">
+    <a v-bind:href="'/menu.html?title='+this.name">
+      <img v-bind:src="imgSrc">
+      <p class="korean-font text">{{koreanname}}</p>
+    </a>
   </div>
   `,
 })
