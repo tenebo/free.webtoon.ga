@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="vue">
+    <form v-on:submit.prevent="addNewBookmark">
+      <label for="new-todo">Add a todo</label>
+      <input
+        v-model="newBookmarkText"
+        id="new-todo"
+        placeholder="E.g. Feed the cat"
+      >
+      <input
+        v-model="newBookmarkEpi"
+        placeholder="Epi"
+      >
+      <button>Add</button>
+    </form>
+    <ul v-if="!is_loading">
+      <li
+        is="bookmark-item"
+        v-for="(todo, index) in bookmark_data.bookmarks"
+        v-bind:key="todo.id"
+        v-bind:title="todo.title + ', ' +  todo.epi"
+        v-on:remove="remove_item(index)"
+      ></li>
+    </ul>
+      <p v-else>Loading...</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script src="/js/bookmark.js"></script>
+</body>
+</html>

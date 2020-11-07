@@ -6,7 +6,7 @@ Vue.component('list-webtoon', {
     }
   },
   template: `
-  <li>
+  <li v-bind:id="num">
     <a v-bind:href="'/view.html?title='+title+'&epi='+num">{{num}} 화</a>
   </li>
   `,
@@ -25,7 +25,10 @@ var app = new Vue({
       .then(response => response.json())
       .then(json => (this.WebtoonData = json))
       .then(this.load_title)
-      .finally(() => this.is_loading = false)
+      .then(()=>{
+        this.is_loading = false
+      })
+      .then(this.load_fragment)
   },
   computed:{
     _GET: function(){
@@ -60,6 +63,11 @@ var app = new Vue({
   methods: {
     load_title: function(){
       document.title = this.WebtoonData.webtoon.korean[this._GET.title] + " 무료 보기"
+    },
+    load_fragment: function(){
+      if(typeof this._GET.top !== "undefined"){
+        window.location.href='#'+this._GET.top
+      }
     }
   },
 })
@@ -72,4 +80,4 @@ function toBottom() {
 function toTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
+}2
