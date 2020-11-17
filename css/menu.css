@@ -32,12 +32,16 @@ header {
 #title{
   font-size: 32px;
   color: #00cc99;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 0px;
   float:left;
 }
 .wt-intro{
   margin-left: 60px;
   display: inline-block;
+}
+.wt-intro-text{
+  float: right;
+  margin-left: 10px;
 }
 #title-img {
   width: 100px;

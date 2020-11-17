@@ -14,7 +14,13 @@
   <div id="vue">
     <div v-if="!is_loading">
       <div class="wt-intro">
-        <img id="title-img" v-bind:src="img_url"><h1 class="korean-font" id="title" >{{korean_title_name}}</h1>
+        <img id="title-img" v-bind:src="img_url">
+        <div class="wt-intro-text">
+          <h1 class="korean-font" id="title" >{{korean_title_name}}</h1>
+          <br>
+          <br>
+          <p class="sub-title" class="korean-font">{{save_price}}원을 무료로!!!</p>
+        </div>
       </div>
       <div class="main">
         <div class="button-container">

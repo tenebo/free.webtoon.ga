@@ -51,6 +51,13 @@ var app = new Vue({
     img_url: function(){
       return 'https://qpo9w6tvvhkbvesizqvshw-on.drv.tw/web/'+this._GET.title+'/'+this._GET.title+'.jpg';
     },
+    save_price: function(){
+      let val = this.WebtoonData.webtoon.epi[this._GET["title"]].save_price;
+      while (/(\d+)(\d{3})/.test(val)){
+        val = val.replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+      }
+      return val;
+    },
     range: function() {
       let epi = this.WebtoonData.webtoon.epi[this._GET["title"]];
       var ans = [];
