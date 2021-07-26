@@ -12,6 +12,7 @@
         "Pigpen",
         "City_Of_The_Dead_Wizard",
         "Cheollima_Mart",
+        "Gosu",
         "Lessa1",
         "Lessa2",
         "Americano_Exodus",
@@ -52,6 +53,7 @@
         "Bastard": "\ud6c4\ub808\uc790\uc2dd",	
         "Jungle_High_School": "\uc785\uc2dc\uba85\ubb38\uc0ac\ub9bd \uc815\uae00\uace0\ub4f1\ud559\uad50",
         "Cheollima_Mart": "\ucc9c\ub9ac\ub9c8 \ub9c8\ud2b8",
+        "Gosu" : "\uace0\uc218",
         "Vigilante": "\ube44\uc9c8\ub780\ud14c"
       },
       "epi": {
@@ -173,6 +175,11 @@
         "Americano_Exodus": {
             "start": "1",
             "end": "197",
+            "save_price": "0"
+        },
+        "Gosu": {
+            "start": "1",
+            "end": "236",
             "save_price": "0"
         },
         "Vigilante": {
