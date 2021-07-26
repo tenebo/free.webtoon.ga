@@ -3,23 +3,25 @@
       "titles": [
         "Sound_Of_Your_Heart",
         "Sweet_Home",
-        "City_Of_The_Dead_Wizard",
         "Vigilante",
+        "Bastard",
         "Now_You_Will_Die_Soon",
         "Yumis_Cells",
         "Zombie_Daughter",
         "The_Dragon_Next_The_Door",
         "Pigpen",
+        "City_Of_The_Dead_Wizard",
         "Cheollima_Mart",
         "Lessa1",
         "Lessa2",
+        "Americano_Exodus",
         "Ghost_Teller",
         "bingtanghulu",
         "Jungle_High_School",
-        "Result_Of_Effort",
         "College_Diary",
         "Money_Game",
         "Friday",
+        "Result_Of_Effort",
         "Crunchy_Korean_Fried_Chicken",
         "Skriptorium",
         "Moon_You",
@@ -44,10 +46,12 @@
         "College_Diary": "\ub300\ud559\uc77c\uae30",
         "Lessa1": "\ub808\uc0ac \uc2dc\uc98c1",
         "Lessa2": "\ub808\uc0ac \uc2dc\uc98c2~3",
+        "Americano_Exodus" : "\uc544\uba54\ub9ac\uce74\ub178 \uc5d1\uc18c\ub354\uc2a4",
         "Skriptorium": "\uc2a4\ud06c\ub9bd\ud1a0\ub9ac\uc6c0",
         "City_Of_The_Dead_Wizard": "\uc8fd\uc740 \ub9c8\ubc95\uc0ac\uc758 \ub3c4\uc2dc",	
-        "Cheollima_Mart": "\ucc9c\ub9ac\ub9c8 \ub9c8\ud2b8",
+        "Bastard": "\ud6c4\ub808\uc790\uc2dd",	
         "Jungle_High_School": "\uc785\uc2dc\uba85\ubb38\uc0ac\ub9bd \uc815\uae00\uace0\ub4f1\ud559\uad50",
+        "Cheollima_Mart": "\ucc9c\ub9ac\ub9c8 \ub9c8\ud2b8",
         "Vigilante": "\ube44\uc9c8\ub780\ud14c"
       },
       "epi": {
@@ -159,6 +163,16 @@
         "Jungle_High_School": {
             "start": "1",
             "end": "467",
+            "save_price": "0"
+        },
+        "Bastard": {
+            "start": "1",
+            "end": "97",
+            "save_price": "0"
+        },
+        "Americano_Exodus": {
+            "start": "1",
+            "end": "197",
             "save_price": "0"
         },
         "Vigilante": {
