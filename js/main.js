@@ -2,7 +2,7 @@ Vue.component('webtoontitle', {
   props: ['name', "koreanname"],
   data:function(){
     return {
-      imgSrc: `https://qpo9w6tvvhkbvesizqvshw-on.drv.tw/web/${this.name}/${this.name}.jpg`,
+      imgSrc: `https://qpo9w6tvvhkbvesizqvshw.on.drv.tw/web/${this.name}/${this.name}.jpg`,
     }
   },
   methods:{

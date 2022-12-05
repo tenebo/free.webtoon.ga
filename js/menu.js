@@ -2,7 +2,7 @@ Vue.component('list-webtoon', {
   props: ['num', 'title'],
   data:function(){
     return {
-      imgSrc: `https://qpo9w6tvvhkbvesizqvshw-on.drv.tw/web/${this.name}/${this.name}.jpg`,
+      imgSrc: `https://qpo9w6tvvhkbvesizqvshw.on.drv.tw/web/${this.name}/${this.name}.jpg`,
     }
   },
   template: `
@@ -18,7 +18,7 @@ var app = new Vue({
   data: {
     WebtoonData: "",
     is_loading:true,
-    //img_url: `https://qpo9w6tvvhkbvesizqvshw-on.drv.tw/web/${this._GET["title"]}/${this._GET["title"]}.jpg`
+    //img_url: `https://qpo9w6tvvhkbvesizqvshw.on.drv.tw/web/${this._GET["title"]}/${this._GET["title"]}.jpg`
   },
   mounted () {
     fetch('/datas.json')
@@ -49,7 +49,7 @@ var app = new Vue({
       return this.WebtoonData.webtoon.korean[this._GET["title"]];
     },
     img_url: function(){
-      return 'https://qpo9w6tvvhkbvesizqvshw-on.drv.tw/web/'+this._GET.title+'/'+this._GET.title+'.jpg';
+      return 'https://qpo9w6tvvhkbvesizqvshw.on.drv.tw/web/'+this._GET.title+'/'+this._GET.title+'.jpg';
     },
     save_price: function(){
       let val = this.WebtoonData.webtoon.epi[this._GET["title"]].save_price;
